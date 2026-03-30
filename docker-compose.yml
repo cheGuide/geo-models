@@ -1,0 +1,173 @@
+##############################################################################
+#  Структура на хосте (Linux-сервер):
+#
+#  ~/models/                          ← эту папку копируешь целиком
+#  ├── docker-compose.yml
+#  ├── GAEA/
+#  │   ├── Dockerfile
+#  │   ├── src/, inference/, ...
+#  │   └── models/
+#  │       ├── Qwen2.5-VL-7B-Instruct/   (~15 GB)
+#  │       └── GAEA/                      (LoRA)
+#  ├── kopernik/
+#  │   ├── *.py, .env
+#  │   └── models/
+#  │       ├── resnet50_streetview_imagenet1k.pth
+#  │       └── resnet50_streetview_imagenet1k_regional.pth
+#  ├── Revisit-Anything/
+#  │   ├── *.py, sam/, VLAD-BuFF/, ...
+#  │   └── models/
+#  │       ├── segment-anything/sam_vit_h_4b8939.pth
+#  │       ├── DnV2_NV/last.ckpt
+#  │       └── dino_salad.ckpt
+#  ├── data/
+#  │   └── ttk_10k_full/
+#  │       ├── images/          (~16k фотографий)
+#  │       └── dataset_metadata.json
+#  └── finetune_output/         (результаты обучения)
+#
+#  Дообучение GAEA в контейнере: docker compose --profile finetune run --rm gaea-finetune
+#  Локальные pip-обновления — только в GAEA/gaea_env (см. GAEA/GAEA_LINUX_FINETUNE.md).
+##############################################################################
+
+services:
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # Образ 1: geo-base (GAEA + Kopernik)
+  #   nvcr.io/nvidia/pytorch:24.10-py3 — PyTorch 2.5, CUDA 12.6, Python 3.10
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  gaea:
+    build: ./GAEA
+    image: geo-base
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./GAEA:/workspace/gaea
+      - ./data:/workspace/data
+      - ./finetune_output:/workspace/finetune_output
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONPATH=/workspace/gaea
+      # Инференс TTK (final_lora): base → merge GAEA → TTK; см. GAEA/src/utils.py
+      - GAEA_LORA_PATH=/workspace/gaea/models/GAEA
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: >
+      python gaea/src/serve/app.py
+      --model-path /workspace/gaea/models/GAEA
+      --model-base /workspace/gaea/models/Qwen2.5-VL-7B-Instruct
+
+  # Дообучение GAEA (LoRA на TTK). Образ geo-base, те же тома, что у gaea.
+  # Запуск: docker compose --profile finetune run --rm gaea-finetune
+  gaea-finetune:
+    image: geo-base
+    build: ./GAEA
+    runtime: nvidia
+    volumes:
+      - ./GAEA:/workspace/gaea
+      - ./data:/workspace/data
+      - ./finetune_output:/workspace/finetune_output
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONPATH=/workspace/gaea
+      - BASE_MODEL_PATH=/workspace/gaea/models/Qwen2.5-VL-7B-Instruct
+      - GAEA_LORA_PATH=/workspace/gaea/models/GAEA
+      - TRAIN_DATA_PATH=/workspace/gaea/data/ttk_train.json
+      - TEST_DATA_PATH=/workspace/gaea/data/ttk_test.json
+      - OUTPUT_DIR=/workspace/finetune_output/gaea_ttk
+      - TTK_DATASET_ROOT=/workspace/data/ttk_10k_full
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/gaea
+    command: python finetune_ttk.py
+    profiles: ["finetune"]
+
+  kopernik:
+    image: geo-base
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./kopernik:/workspace/kopernik
+      - ./data:/workspace/data
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONPATH=/workspace/kopernik
+      - DATASET_PATH=/workspace/data/ttk_10k_full
+      - CKPT=/workspace/kopernik/models/resnet50_streetview_imagenet1k.pth
+      - CKPT_REG=/workspace/kopernik/models/resnet50_streetview_imagenet1k_regional.pth
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/kopernik
+    command: >
+      streamlit run gui.py
+      --server.port 8501
+      --server.headless true
+
+  kopernik-api:
+    image: geo-base
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./kopernik:/workspace/kopernik
+      - ./data:/workspace/data
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONPATH=/workspace/kopernik
+      - DATASET_PATH=/workspace/data/ttk_10k_full
+      - CKPT=/workspace/kopernik/models/resnet50_streetview_imagenet1k.pth
+      - CKPT_REG=/workspace/kopernik/models/resnet50_streetview_imagenet1k_regional.pth
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/kopernik
+    command: uvicorn server:app --host 0.0.0.0 --port 8000
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # Образ 2: segvlad (Revisit-Anything)
+  #   nvcr.io/nvidia/pytorch:24.01-py3 — PyTorch 2.2, CUDA 12.3, Python 3.10
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  revisit:
+    build: ./Revisit-Anything
+    image: segvlad
+    volumes:
+      - ./Revisit-Anything:/workspace/revisit
+      - ./data:/workspace/data
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONPATH=/workspace/revisit
+      - TORCH_HOME=/workspace/revisit/.torch_cache
+      - WORKDIR_DATA=/workspace/data
+      - MODEL_DIR=/workspace/revisit/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/revisit
+    command: >
+      python place_rec_SAM_DINO.py
+      --dataset 17places
+      --method DINO
