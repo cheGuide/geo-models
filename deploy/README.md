@@ -133,6 +133,32 @@ docker exec -it geoagent-shell bash
 
 Переменные см. `.env.example` (`GEOAGENT_IMAGE` — тот же тег, что пушите, чтобы на сервере делать `pull`).
 
+### Голый сервер: что подтягивается само, а что нет
+
+| Что | Автоматически? | Комментарий |
+|-----|------------------|---------------|
+| Образ `geo-deploy-geoagent` | Да, если сделать `docker pull` с registry или `docker compose build` (при сборке качается базовый `nvcr.io/nvidia/pytorch` и pip) | Только среда и библиотеки, **не** веса модели |
+| Код GeoAgent | Нет | Нужен клон репозитория и путь `GEOAGENT_PATH` (том в контейнер) |
+| Веса GeoAgent (`checkpoints/...`) | Нет | Скачать на хост **до** или **внутри** контейнера, см. ниже |
+| Датасет TTK (`ttk_10k_full`) | Нет | Положить/смонтировать в `DATA_PATH`; контейнер сам не качает архив |
+
+**Минимальный порядок на новом сервере**
+
+1. Установить Docker, Compose, [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html).
+2. Клонировать репозиторий с `GeoAgent/` (или скопировать каталог).
+3. Скачать веса (на хосте с `huggingface_hub` или в запущенном контейнере):
+
+   ```bash
+   pip install huggingface_hub   # на хосте, если без контейнера
+   python GeoAgent/tools/download_geoagent_model.py
+   # или: huggingface-cli download ghost233lism/GeoAgent --local-dir GeoAgent/checkpoints/ghost233lism/GeoAgent
+   ```
+
+4. Положить датасет в `data/ttk_10k_full/` (структура с `dataset_metadata.json` и `images/`), настроить `DATA_PATH` в `deploy/.env`.
+5. `cd deploy && cp .env.example .env`, поправить пути, затем `docker compose pull` (если образ в registry) или `docker compose build geoagent-shell`, затем `docker compose --profile geoagent up -d geoagent-shell`.
+
+Итого: контейнер **не** «скачивает всё с нуля» сам по себе — он даёт только окружение; веса и данные вы подкладываете или качаете отдельными командами.
+
 ## Сборка образов
 
 ```bash

@@ -1,0 +1,16 @@
+# GAEA deploy — минимальные зависимости для inference и finetune
+numpy>=1.26.0,<2.0.0
+psutil>=5.9.0
+transformers>=4.47.0,<5.0.0
+accelerate>=0.26.0
+peft>=0.10.0
+bitsandbytes>=0.43.0
+qwen-vl-utils>=0.0.8
+sentencepiece>=0.2.0
+tokenizers>=0.20.0
+huggingface-hub>=0.25.0
+safetensors>=0.4.0
+einops>=0.7.0
+gradio>=4.0.0
+geopy>=2.4.0
+pandas>=2.0.0

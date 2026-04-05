@@ -28,6 +28,16 @@
 #
 #  Дообучение GAEA в контейнере: docker compose --profile finetune run --rm gaea-finetune
 #  Локальные pip-обновления — только в GAEA/gaea_env (см. GAEA/GAEA_LINUX_FINETUNE.md).
+#
+#  GeoAgent (LoRA на TTK):
+#    Linux/macOS: docker compose build geoagent-train
+#    Windows (ждёт Docker Desktop, при необходимости запускает его):
+#      .\scripts\geoagent-docker.ps1 build
+#      или: scripts\geoagent-docker.cmd build
+#    docker compose --profile geoagent run geoagent-prepare
+#    docker compose --profile geoagent run geoagent-train
+#    Постоянный контейнер: docker compose --profile geoagent up -d geoagent-shell
+#  Нужны: GeoAgent/checkpoints/ghost233lism/GeoAgent (веса), data/ttk_10k_full
 ##############################################################################
 
 services:
@@ -37,6 +47,7 @@ services:
   #   nvcr.io/nvidia/pytorch:24.10-py3 — PyTorch 2.5, CUDA 12.6, Python 3.10
   # ═══════════════════════════════════════════════════════════════════════════
 
+  # Gradio: src/serve/app.py по умолчанию подставляет SYSTEM_PROMPT TTK (только lat, lon).
   gaea:
     build: ./GAEA
     image: geo-base
@@ -171,3 +182,97 @@ services:
       python place_rec_SAM_DINO.py
       --dataset 17places
       --method DINO
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # GeoAgent — дообучение LoRA на TTK (сервер с NVIDIA GPU)
+  # Образ: GeoAgent/Dockerfile
+  # На хосте нужны: ./GeoAgent (код), ./data/ttk_10k_full, веса GeoAgent в ./GeoAgent/checkpoints/ghost233lism/GeoAgent
+  #
+  # Windows: если data/ttk_10k_full — симлинк, «голый» compose не увидит файлы в Linux-VM;
+  #   используйте scripts/geoagent-docker.ps1 prepare|train (добавляет явный -v на реальный путь).
+  # Linux: scripts/geoagent-docker.sh prepare|train — то же.
+  #
+  # 1) Подготовить JSON (один раз или после смены датасета):
+  #    docker compose --profile geoagent run geoagent-prepare
+  #    или: .\scripts\geoagent-docker.ps1 prepare
+  # 2) Обучение:
+  #    docker compose --profile geoagent run geoagent-train
+  #    или: .\scripts\geoagent-docker.ps1 train
+  # Постоянный контейнер (в списке Docker Desktop, restart: unless-stopped):
+  #    docker compose --profile geoagent up -d geoagent-shell
+  #    docker exec -it geoagent-shell bash
+  # Логи и чекпоинты: ./GeoAgent/train_output/ (том на хосте)
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  # Долгоживущий процесс: тома как у обучения; команды внутри — docker exec.
+  geoagent-shell:
+    build:
+      context: ./GeoAgent
+      dockerfile: Dockerfile
+    image: geoagent-train
+    container_name: geoagent-shell
+    runtime: nvidia
+    volumes:
+      - ./GeoAgent:/workspace/GeoAgent
+      - ./data:/workspace/data
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONPATH=/workspace/GeoAgent
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/GeoAgent
+    command: ["sleep", "infinity"]
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    profiles: ["geoagent"]
+
+  geoagent-prepare:
+    build:
+      context: ./GeoAgent
+      dockerfile: Dockerfile
+    image: geoagent-train
+    volumes:
+      - ./GeoAgent:/workspace/GeoAgent
+      - ./data:/workspace/data
+    environment:
+      - PYTHONPATH=/workspace/GeoAgent
+    working_dir: /workspace/GeoAgent
+    command: >
+      python train/prepare_ttk_geoagent_data.py
+      --dataset_path /workspace/data/ttk_10k_full
+      --output_dir /workspace/GeoAgent/data/ttk_geoagent_sft
+    profiles: ["geoagent"]
+
+  geoagent-train:
+    build:
+      context: ./GeoAgent
+      dockerfile: Dockerfile
+    image: geoagent-train
+    runtime: nvidia
+    volumes:
+      - ./GeoAgent:/workspace/GeoAgent
+      - ./data:/workspace/data
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONPATH=/workspace/GeoAgent
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/GeoAgent
+    command: >
+      python train/train_ttk_lora.py
+      --model_path /workspace/GeoAgent/checkpoints/ghost233lism/GeoAgent
+      --train_json /workspace/GeoAgent/data/ttk_geoagent_sft/train.json
+      --val_json /workspace/GeoAgent/data/ttk_geoagent_sft/val.json
+      --output_dir /workspace/GeoAgent/train_output/ttk_lora
+    profiles: ["geoagent"]

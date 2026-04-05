@@ -1,0 +1,8 @@
+# AnyLoc — минимальные зависимости для run_moscow_ttk.py
+# (без RAPIDS/специфичных NGC пакетов)
+timm>=0.6.0
+einops>=0.6.0
+fast-pytorch-kmeans>=0.1.6
+Pillow>=9.0.0
+tqdm>=4.60.0
+numpy>=1.20.0
