@@ -1,0 +1,216 @@
+# Geo Models — Docker Compose для сервера
+# Запуск: docker compose up -d [geovista|gaea|...]
+
+services:
+  geovista:
+    build:
+      context: .
+      dockerfile: geovista/Dockerfile
+    image: geo-deploy-geovista
+    container_name: geovista-vllm
+    ports:
+      - "${GEOVISTA_PORT:-8000}:8000"
+    volumes:
+      - "${MODELS_PATH:-../models}:/workspace/models:ro"
+      - "${GeoVista_PATH:-../GeoVista}:/workspace/geovista:ro"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES:-all}
+      # Полный путь к весам в контейнере: задайте GEOVISTA_MODEL_PATH в .env или положите модель в ../models/GEOVISTA_MODEL
+      - MODEL_PATH=${GEOVISTA_MODEL_PATH:-/workspace/models/${GEOVISTA_MODEL:-GeoVista-RL-6k-7B}}
+      - USE_QUANTIZATION=${GEOVISTA_USE_QUANTIZATION:-1}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    ipc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    # ENTRYPOINT из образа, MODEL_PATH через env
+    # vLLM OpenAI API (не все сборки отдают /health)
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:8000/v1/models"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+
+  gaea:
+    build:
+      context: .
+      dockerfile: gaea/Dockerfile
+    image: geo-deploy-gaea
+    container_name: gaea-gradio
+    ports:
+      - "7860:7860"
+    volumes:
+      - "${GAEA_PATH:-../GAEA}:/workspace/gaea:ro"
+      - "${MODELS_PATH:-../models}:/workspace/models:ro"
+      # Чтобы подхватить TTK LoRA после finetune (final_lora в outputs)
+      - "${OUTPUT_PATH:-../outputs}:/workspace/outputs:ro"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES:-all}
+      - PYTHONPATH=/workspace/gaea
+      # Для TTK-инференса: base → merge GAEA → TTK (см. GAEA src/utils.py)
+      - GAEA_LORA_PATH=${GAEA_LORA_PATH:-/workspace/models/GAEA}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/gaea
+    # По умолчанию app.py подставляет SYSTEM_PROMPT TTK (ответ lat, lon). Отключить: --no-use-ttk-coord-prompt
+    # GAEA_SERVE_MODEL_PATH: исходный LoRA /workspace/models/GAEA или TTK /workspace/outputs/.../final_lora
+    command: >
+      python src/serve/app.py
+      --model-path ${GAEA_SERVE_MODEL_PATH:-/workspace/models/GAEA}
+      --model-base /workspace/models/Qwen2.5-VL-7B-Instruct
+
+  gaea-finetune:
+    build:
+      context: .
+      dockerfile: gaea/Dockerfile
+    image: geo-deploy-gaea
+    container_name: gaea-finetune
+    volumes:
+      - "${GAEA_PATH:-../GAEA}:/workspace/gaea:rw"
+      - "${MODELS_PATH:-../models}:/workspace/models:ro"
+      - "${DATA_PATH:-../data}:/workspace/data:ro"
+      - "${OUTPUT_PATH:-../outputs}:/workspace/outputs:rw"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES:-all}
+      - PYTHONPATH=/workspace/gaea
+      - BASE_MODEL_PATH=/workspace/models/Qwen2.5-VL-7B-Instruct
+      - GAEA_LORA_PATH=/workspace/models/GAEA
+      - TRAIN_DATA_PATH=${GAEA_TRAIN_PATH:-/workspace/gaea/data/ttk_train.json}
+      - TEST_DATA_PATH=${GAEA_TEST_PATH:-/workspace/gaea/data/ttk_test.json}
+      - OUTPUT_DIR=${GAEA_OUTPUT_DIR:-/workspace/outputs/finetune_gaea_ttk}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/gaea
+    command: python finetune_ttk.py
+    profiles:
+      - finetune
+
+  anyloc:
+    build:
+      context: .
+      dockerfile: anyloc/Dockerfile
+    image: geo-deploy-anyloc
+    container_name: anyloc
+    volumes:
+      - "${AnyLoc_PATH:-../AnyLoc}:/workspace/anyloc:ro"
+      - "${DATA_PATH:-../data}:/workspace/data:ro"
+      - "${OUTPUT_PATH:-../outputs}:/workspace/outputs:rw"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES:-all}
+      - PYTHONPATH=/workspace/anyloc
+    working_dir: /workspace/anyloc
+    # Переопределить: docker compose run --profile anyloc anyloc python run_moscow_ttk.py --dataset_path /workspace/data/ttk_10k_full --num_samples 500
+    command: >
+      python run_moscow_ttk.py
+      --dataset_path /workspace/data/ttk_10k_full
+      --num_samples 500
+      --output /workspace/outputs/anyloc_results.json
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    profiles:
+      - anyloc
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # GeoAgent — LoRA на TTK (образ из ../GeoAgent/Dockerfile)
+  # Сборка: docker compose build geoagent-shell
+  # Постоянный контейнер: docker compose --profile geoagent up -d geoagent-shell
+  # Подготовка данных / обучение: docker compose --profile geoagent run geoagent-prepare|geoagent-train
+  # Образ для registry: задайте GEOAGENT_IMAGE в .env (см. push-geoagent.ps1)
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  geoagent-shell:
+    build:
+      context: ../GeoAgent
+      dockerfile: Dockerfile
+    image: ${GEOAGENT_IMAGE:-geo-deploy-geoagent:latest}
+    container_name: geoagent-shell
+    runtime: nvidia
+    volumes:
+      - "${GEOAGENT_PATH:-../GeoAgent}:/workspace/GeoAgent"
+      - "${DATA_PATH:-../data}:/workspace/data"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES:-all}
+      - PYTHONPATH=/workspace/GeoAgent
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/GeoAgent
+    command: ["sleep", "infinity"]
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    profiles:
+      - geoagent
+
+  geoagent-prepare:
+    build:
+      context: ../GeoAgent
+      dockerfile: Dockerfile
+    image: ${GEOAGENT_IMAGE:-geo-deploy-geoagent:latest}
+    volumes:
+      - "${GEOAGENT_PATH:-../GeoAgent}:/workspace/GeoAgent"
+      - "${DATA_PATH:-../data}:/workspace/data"
+    environment:
+      - PYTHONPATH=/workspace/GeoAgent
+    working_dir: /workspace/GeoAgent
+    command: >
+      python train/prepare_ttk_geoagent_data.py
+      --dataset_path /workspace/data/ttk_10k_full
+      --output_dir /workspace/GeoAgent/data/ttk_geoagent_sft
+    profiles:
+      - geoagent
+
+  geoagent-train:
+    build:
+      context: ../GeoAgent
+      dockerfile: Dockerfile
+    image: ${GEOAGENT_IMAGE:-geo-deploy-geoagent:latest}
+    runtime: nvidia
+    volumes:
+      - "${GEOAGENT_PATH:-../GeoAgent}:/workspace/GeoAgent"
+      - "${DATA_PATH:-../data}:/workspace/data"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES:-all}
+      - PYTHONPATH=/workspace/GeoAgent
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    working_dir: /workspace/GeoAgent
+    command: >
+      python train/train_ttk_lora.py
+      --model_path /workspace/GeoAgent/checkpoints/ghost233lism/GeoAgent
+      --train_json /workspace/GeoAgent/data/ttk_geoagent_sft/train.json
+      --val_json /workspace/GeoAgent/data/ttk_geoagent_sft/val.json
+      --output_dir /workspace/GeoAgent/train_output/ttk_lora
+    profiles:
+      - geoagent
