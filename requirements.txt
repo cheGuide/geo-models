@@ -1,0 +1,11 @@
+# Установка по шагам (рекомендуется):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r requirements.txt
+#
+# Без GPU (отладка): pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+numpy>=1.26
+scipy
+scikit-learn
+Pillow
+tqdm
+pyproj>=3.6

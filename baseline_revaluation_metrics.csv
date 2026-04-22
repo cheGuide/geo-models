@@ -1,0 +1,5 @@
+model,label,best_epoch,mean_m,median_m,report_png
+kopernik,Kopernik (Direct Regression),57,2047.8,1418.6,C:\Users\q\Work\models\kopernik\kopernik_v2_report.png
+cplanet,CPlaNet (S2-Cell Classification),27,2026.8,1153.5,C:\Users\q\Work\models\kopernik\cplanet_v2_report.png
+cosplace,CosPlace (Global Retrieval),7,3233.2,2481.4,C:\Users\q\Work\models\CosPlace\cosplace_v2_report.png
+geoclip,GeoCLIP (Semantic Alignment),1,46980.4,3166.9,C:\Users\q\Work\models\geo-clip\geoclip_v2_report.png

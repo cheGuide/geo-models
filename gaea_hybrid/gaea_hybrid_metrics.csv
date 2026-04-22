@@ -1,0 +1,2 @@
+epoch,train_loss_total,train_mse,train_contrastive,train_geofence,val_mean_m,val_median_m,lr
+1,1.772798,0.319033,3.032567,1.987495,4343.28,3953.53,1.00e-06

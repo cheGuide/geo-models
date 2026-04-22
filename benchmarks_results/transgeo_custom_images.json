@@ -1,0 +1,686 @@
+{
+  "checkpoint": "C:\\Users\\q\\Work\\models\\TransGeo2022\\checkpoints\\CVUSA_model\\result\\checkpoint.pth.tar",
+  "dataset_root": "C:\\Users\\q\\Work\\models\\ttk_10k_full",
+  "transgeo": {
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.6643165349960327,
+          "lat": 55.764297,
+          "lon": 37.553848,
+          "ground_ref": "images/ttk_04436_55.764297_37.553848_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.5478610396385193,
+          "lat": 55.787979,
+          "lon": 37.611555,
+          "ground_ref": "images/ttk_05872_55.787979_37.611555_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.5240005254745483,
+          "lat": 55.751821,
+          "lon": 37.596422,
+          "ground_ref": "images/ttk_03609_55.751821_37.596422_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.500062108039856,
+          "lat": 55.766574,
+          "lon": 37.538978,
+          "ground_ref": "images/ttk_04523_55.766574_37.538978_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.4700487554073334,
+          "lat": 55.700862,
+          "lon": 37.68874,
+          "ground_ref": "images/ttk_00455_55.700862_37.688740_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.4738501310348511,
+          "lat": 55.79553,
+          "lon": 37.568104,
+          "ground_ref": "images/ttk_06322_55.795530_37.568104_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.4064864218235016,
+          "lat": 55.707343,
+          "lon": 37.56892,
+          "ground_ref": "images/ttk_00870_55.707343_37.568920_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.3799593150615692,
+          "lat": 55.758,
+          "lon": 37.547822,
+          "ground_ref": "images/ttk_03963_55.758000_37.547822_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.372903048992157,
+          "lat": 55.793974,
+          "lon": 37.677883,
+          "ground_ref": "images/ttk_06278_55.793974_37.677883_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.3654046654701233,
+          "lat": 55.726651,
+          "lon": 37.585584,
+          "ground_ref": "images/ttk_02006_55.726651_37.585584_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.5150216817855835,
+          "lat": 55.79553,
+          "lon": 37.568104,
+          "ground_ref": "images/ttk_06322_55.795530_37.568104_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.43852677941322327,
+          "lat": 55.726651,
+          "lon": 37.585584,
+          "ground_ref": "images/ttk_02006_55.726651_37.585584_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.4307878613471985,
+          "lat": 55.707343,
+          "lon": 37.56892,
+          "ground_ref": "images/ttk_00870_55.707343_37.568920_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.38682082295417786,
+          "lat": 55.736971,
+          "lon": 37.526028,
+          "ground_ref": "images/ttk_02637_55.736971_37.526028_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.3833460807800293,
+          "lat": 55.736935,
+          "lon": 37.521613,
+          "ground_ref": "images/ttk_02635_55.736935_37.521613_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.5752922296524048,
+          "lat": 55.73875,
+          "lon": 37.580996,
+          "ground_ref": "images/ttk_02756_55.738750_37.580996_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.5685983896255493,
+          "lat": 55.736971,
+          "lon": 37.526028,
+          "ground_ref": "images/ttk_02637_55.736971_37.526028_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.5509664416313171,
+          "lat": 55.751821,
+          "lon": 37.596422,
+          "ground_ref": "images/ttk_03609_55.751821_37.596422_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.5406126976013184,
+          "lat": 55.78778,
+          "lon": 37.69144,
+          "ground_ref": "images/ttk_05908_55.787780_37.691440_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.5305070877075195,
+          "lat": 55.700862,
+          "lon": 37.68874,
+          "ground_ref": "images/ttk_00455_55.700862_37.688740_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.4971994459629059,
+          "lat": 55.79553,
+          "lon": 37.568104,
+          "ground_ref": "images/ttk_06322_55.795530_37.568104_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.47775402665138245,
+          "lat": 55.736935,
+          "lon": 37.521613,
+          "ground_ref": "images/ttk_02635_55.736935_37.521613_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.46839064359664917,
+          "lat": 55.736971,
+          "lon": 37.526028,
+          "ground_ref": "images/ttk_02637_55.736971_37.526028_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.442862331867218,
+          "lat": 55.713046,
+          "lon": 37.60943,
+          "ground_ref": "images/ttk_01171_55.713046_37.609430_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.44279035925865173,
+          "lat": 55.751999,
+          "lon": 37.572267,
+          "ground_ref": "images/ttk_03598_55.751999_37.572267_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.3920658528804779,
+          "lat": 55.758042,
+          "lon": 37.704023,
+          "ground_ref": "images/ttk_04034_55.758042_37.704023_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.3793398141860962,
+          "lat": 55.744858,
+          "lon": 37.592069,
+          "ground_ref": "images/ttk_03137_55.744858_37.592069_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.36494216322898865,
+          "lat": 55.758,
+          "lon": 37.547822,
+          "ground_ref": "images/ttk_03963_55.758000_37.547822_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.3642962574958801,
+          "lat": 55.725045,
+          "lon": 37.649167,
+          "ground_ref": "images/ttk_01941_55.725045_37.649167_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.3539378046989441,
+          "lat": 55.766574,
+          "lon": 37.538978,
+          "ground_ref": "images/ttk_04523_55.766574_37.538978_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.5052425861358643,
+          "lat": 55.806001,
+          "lon": 37.519255,
+          "ground_ref": "images/ttk_06958_55.806001_37.519255_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.4703407883644104,
+          "lat": 55.793974,
+          "lon": 37.677883,
+          "ground_ref": "images/ttk_06278_55.793974_37.677883_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.4349134564399719,
+          "lat": 55.736971,
+          "lon": 37.526028,
+          "ground_ref": "images/ttk_02637_55.736971_37.526028_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.4257007837295532,
+          "lat": 55.75345,
+          "lon": 37.535152,
+          "ground_ref": "images/ttk_03675_55.753450_37.535152_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.4188612997531891,
+          "lat": 55.761026,
+          "lon": 37.53675,
+          "ground_ref": "images/ttk_04146_55.761026_37.536750_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.4309271574020386,
+          "lat": 55.796996,
+          "lon": 37.59425,
+          "ground_ref": "images/ttk_06428_55.796996_37.594250_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.4284806251525879,
+          "lat": 55.744858,
+          "lon": 37.592069,
+          "ground_ref": "images/ttk_03137_55.744858_37.592069_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.4187239408493042,
+          "lat": 55.807546,
+          "lon": 37.704204,
+          "ground_ref": "images/ttk_07136_55.807546_37.704204_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.41386401653289795,
+          "lat": 55.778992,
+          "lon": 37.669055,
+          "ground_ref": "images/ttk_05334_55.778992_37.669055_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.4114484190940857,
+          "lat": 55.766574,
+          "lon": 37.538978,
+          "ground_ref": "images/ttk_04523_55.766574_37.538978_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.5460530519485474,
+          "lat": 55.736971,
+          "lon": 37.526028,
+          "ground_ref": "images/ttk_02637_55.736971_37.526028_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.542515754699707,
+          "lat": 55.79553,
+          "lon": 37.568104,
+          "ground_ref": "images/ttk_06322_55.795530_37.568104_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.5056443214416504,
+          "lat": 55.736935,
+          "lon": 37.521613,
+          "ground_ref": "images/ttk_02635_55.736935_37.521613_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.49450191855430603,
+          "lat": 55.713046,
+          "lon": 37.60943,
+          "ground_ref": "images/ttk_01171_55.713046_37.609430_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.4794856309890747,
+          "lat": 55.726651,
+          "lon": 37.585584,
+          "ground_ref": "images/ttk_02006_55.726651_37.585584_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.40916091203689575,
+          "lat": 55.766574,
+          "lon": 37.538978,
+          "ground_ref": "images/ttk_04523_55.766574_37.538978_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.4020744264125824,
+          "lat": 55.738494,
+          "lon": 37.60961,
+          "ground_ref": "images/ttk_02769_55.738494_37.609610_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.40199586749076843,
+          "lat": 55.78778,
+          "lon": 37.69144,
+          "ground_ref": "images/ttk_05908_55.787780_37.691440_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.3987109661102295,
+          "lat": 55.73875,
+          "lon": 37.580996,
+          "ground_ref": "images/ttk_02756_55.738750_37.580996_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.393036425113678,
+          "lat": 55.740774,
+          "lon": 37.537589,
+          "ground_ref": "images/ttk_02924_55.740774_37.537589_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.5836091637611389,
+          "lat": 55.79553,
+          "lon": 37.568104,
+          "ground_ref": "images/ttk_06322_55.795530_37.568104_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.537833034992218,
+          "lat": 55.726651,
+          "lon": 37.585584,
+          "ground_ref": "images/ttk_02006_55.726651_37.585584_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.481084942817688,
+          "lat": 55.736971,
+          "lon": 37.526028,
+          "ground_ref": "images/ttk_02637_55.736971_37.526028_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.4561805725097656,
+          "lat": 55.751999,
+          "lon": 37.572267,
+          "ground_ref": "images/ttk_03598_55.751999_37.572267_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.44894474744796753,
+          "lat": 55.736935,
+          "lon": 37.521613,
+          "ground_ref": "images/ttk_02635_55.736935_37.521613_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.5263062715530396,
+          "lat": 55.725045,
+          "lon": 37.649167,
+          "ground_ref": "images/ttk_01941_55.725045_37.649167_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.47598421573638916,
+          "lat": 55.809061,
+          "lon": 37.631842,
+          "ground_ref": "images/ttk_07197_55.809061_37.631842_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.45736703276634216,
+          "lat": 55.758042,
+          "lon": 37.704023,
+          "ground_ref": "images/ttk_04034_55.758042_37.704023_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.42222899198532104,
+          "lat": 55.78778,
+          "lon": 37.69144,
+          "ground_ref": "images/ttk_05908_55.787780_37.691440_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.40877652168273926,
+          "lat": 55.744858,
+          "lon": 37.592069,
+          "ground_ref": "images/ttk_03137_55.744858_37.592069_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.4836331605911255,
+          "lat": 55.806001,
+          "lon": 37.519255,
+          "ground_ref": "images/ttk_06958_55.806001_37.519255_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.4367731809616089,
+          "lat": 55.766574,
+          "lon": 37.538978,
+          "ground_ref": "images/ttk_04523_55.766574_37.538978_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.42860502004623413,
+          "lat": 55.758042,
+          "lon": 37.704023,
+          "ground_ref": "images/ttk_04034_55.758042_37.704023_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.41952192783355713,
+          "lat": 55.804655,
+          "lon": 37.574317,
+          "ground_ref": "images/ttk_06889_55.804655_37.574317_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.3924247920513153,
+          "lat": 55.809061,
+          "lon": 37.631842,
+          "ground_ref": "images/ttk_07197_55.809061_37.631842_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.49497973918914795,
+          "lat": 55.759549,
+          "lon": 37.631696,
+          "ground_ref": "images/ttk_04095_55.759549_37.631696_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.4913402795791626,
+          "lat": 55.786586,
+          "lon": 37.637589,
+          "ground_ref": "images/ttk_05790_55.786586_37.637589_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.4890825152397156,
+          "lat": 55.70553,
+          "lon": 37.702561,
+          "ground_ref": "images/ttk_00743_55.705530_37.702561_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.4685206115245819,
+          "lat": 55.700862,
+          "lon": 37.68874,
+          "ground_ref": "images/ttk_00455_55.700862_37.688740_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.45824265480041504,
+          "lat": 55.736971,
+          "lon": 37.526028,
+          "ground_ref": "images/ttk_02637_55.736971_37.526028_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.6148226857185364,
+          "lat": 55.764297,
+          "lon": 37.553848,
+          "ground_ref": "images/ttk_04436_55.764297_37.553848_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.5378561615943909,
+          "lat": 55.769976,
+          "lon": 37.523893,
+          "ground_ref": "images/ttk_04704_55.769976_37.523893_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.5167481899261475,
+          "lat": 55.70553,
+          "lon": 37.702561,
+          "ground_ref": "images/ttk_00743_55.705530_37.702561_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.5159944295883179,
+          "lat": 55.787979,
+          "lon": 37.611555,
+          "ground_ref": "images/ttk_05872_55.787979_37.611555_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.4987611472606659,
+          "lat": 55.789296,
+          "lon": 37.608074,
+          "ground_ref": "images/ttk_05964_55.789296_37.608074_h0.jpg"
+        }
+      ]
+    },
+    "c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.5039554834365845,
+          "lat": 55.792461,
+          "lon": 37.609627,
+          "ground_ref": "images/ttk_06153_55.792461_37.609627_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.4979705810546875,
+          "lat": 55.764297,
+          "lon": 37.553848,
+          "ground_ref": "images/ttk_04436_55.764297_37.553848_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.44422537088394165,
+          "lat": 55.70553,
+          "lon": 37.702561,
+          "ground_ref": "images/ttk_00743_55.705530_37.702561_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.4259050488471985,
+          "lat": 55.794013,
+          "lon": 37.708332,
+          "ground_ref": "images/ttk_06292_55.794013_37.708332_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.420756995677948,
+          "lat": 55.787979,
+          "lon": 37.611555,
+          "ground_ref": "images/ttk_05872_55.787979_37.611555_h0.jpg"
+        }
+      ]
+    },
+    "1775160445247.png": {
+      "path": "C:\\Users\\q\\Work\\models\\benchmarks_results\\image\\MOSCOW_TTK_METHODS_TABLE\\1775160445247.png",
+      "top_k": [
+        {
+          "rank": 1,
+          "sim": 0.5085893869400024,
+          "lat": 55.792461,
+          "lon": 37.609627,
+          "ground_ref": "images/ttk_06153_55.792461_37.609627_h0.jpg"
+        },
+        {
+          "rank": 2,
+          "sim": 0.49953287839889526,
+          "lat": 55.764297,
+          "lon": 37.553848,
+          "ground_ref": "images/ttk_04436_55.764297_37.553848_h0.jpg"
+        },
+        {
+          "rank": 3,
+          "sim": 0.4501357078552246,
+          "lat": 55.70553,
+          "lon": 37.702561,
+          "ground_ref": "images/ttk_00743_55.705530_37.702561_h0.jpg"
+        },
+        {
+          "rank": 4,
+          "sim": 0.4267926514148712,
+          "lat": 55.787979,
+          "lon": 37.611555,
+          "ground_ref": "images/ttk_05872_55.787979_37.611555_h0.jpg"
+        },
+        {
+          "rank": 5,
+          "sim": 0.4250110387802124,
+          "lat": 55.794013,
+          "lon": 37.708332,
+          "ground_ref": "images/ttk_06292_55.794013_37.708332_h0.jpg"
+        }
+      ]
+    }
+  }
+}

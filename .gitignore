@@ -1,0 +1,69 @@
+# Virtual environments
+.venv/
+venv/
+env/
+geoclip_env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Model weights (too large for git)
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.joblib
+*.npz
+*.safetensors
+*.gguf
+*.npy
+
+# Test / build outputs
+.automated_test_out/
+
+# Secrets
+GeoAgent/apps/geo_photo_bot/.env
+GeoAgent/.env
+kopernik/.env
+*.env
+
+# Logs and error outputs
+*.log
+*.err
+run_baseline_revaluation_log*.txt
+
+# Third-party clones (managed separately)
+AnyLoc/
+GAEA/
+GeoAgent/
+GeoVista/
+Revisit-Anything/
+TransGeo2022/
+CosPlace/
+segvlad/
+netvlad_moscow/
+locdiff/
+geo-clip/
+ConceptAwareGeo/
+cross_view_localization_DSM/
+deep-visual-geo-localization-benchmark/
+VIGOR_Moscow/
+revisiting-im2gps/
+
+# kopernik — отдельный git-репозиторий
+kopernik/
+
+# Данные и датасеты
+data/
+datasets/
+datasets_vg/
+ttk_10k_full/
+
+# Директория с моделями
+models/
+
+# HuggingFace / промежуточные данные
+hf_data/
+hf_images/

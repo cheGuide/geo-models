@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "model": "GeoAgent",
+    "dataset_path": "c:\\Users\\q\\Work\\models\\ttk_10k_full",
+    "output_mode": "wgs84_json",
+    "num_requested": 1,
+    "num_evaluated_infer": 1,
+    "num_geocode_errors": 0,
+    "num_parse_no_coordinates": 0,
+    "mean_error_km": 5.6893952880175,
+    "median_error_km": 5.6893952880175,
+    "within_1km_pct": 0.0,
+    "within_5km_pct": 0.0,
+    "within_25km_pct": 100.0,
+    "num_with_error_km": 1
+  },
+  "results": [
+    {
+      "filename": "ttk_07011_55.806014_37.636381_h0.jpg",
+      "gt_lat": 55.80601354522349,
+      "gt_lon": 37.63638071370164,
+      "infer_sec": 183.1,
+      "raw_response": "```json\n{\n  \"ChainOfThought\": {\n    \"CountryIdentification\": {\n      \"Clues\": [\n        \"Russian-style road signs\",\n        \"European-style architecture\",\n        \"Urban environment\",\n        \"Clear blue sky\"\n      ],\n      \"Reasoning\": \"The presence of Russian-style road signs and European-style architecture suggests this is in Russia, a country known for its urban environments and clear skies. These clues strongly indicate Russia as the country of origin.\",\n      \"Conclusion\": \"Russia\",\n      \"Uncertainty\": \"Low\"\n    },\n    \"RegionalGuess\": {\n      \"Clues\": [\n        \"Russian-style road signs\",\n        \"European-style architecture\",\n        \"Urban environment\",\n        \"Clear blue sky\"\n      ],\n      \"Reasoning\": \"The Russian-style road signs and European-style architecture suggest a major European city in Russia. The urban environment and clear blue sky are consistent with a temperate climate. These clues strongly suggest Moscow as the regional guess. Conclusion: Moscow. Uncertainty: Low\",\n      \"Conclusion\": \"Moscow\",\n      \"Uncertainty\": \"Low\"\n    },\n    \"PreciseLocalization\": {\n      \"Clues\": [\n        \"Russian-style road signs\",\n        \"European-style architecture\",\n        \"Urban environment\",\n        \"Clear blue sky\"\n      ],\n      \"Reasoning\": \"The Russian-style road signs and European-style architecture are characteristic of Moscow, a major city in Russia. The urban environment and clear blue sky are consistent with a temperate climate. These clues strongly suggest Moscow as the precise localization. Conclusion: Moscow. Uncertainty: Low\",\n      \"Conclusion\": \"Moscow\",\n      \"Uncertainty\": \"Low\"\n    }\n  },\n  \"PredictedCoordinates\": {\n    \"latitude\": 55.7562,\n    \"longitude\": 37.6156\n  }\n}\n```",
+      "status": "ok",
+      "pred_lat": 55.7562,
+      "pred_lon": 37.6156,
+      "error_km": 5.6893952880175
+    }
+  ]
+}

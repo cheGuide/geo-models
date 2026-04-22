@@ -1,0 +1,13 @@
+{
+  "note": "Быстрый тест 2026-04-10: подвыборка 2500 кадров bbox, K=128, 2 эпохи, decode=sphere (проекция mu), max_eval=400",
+  "method": "MvMF_vMF_ResNet18",
+  "dataset_path": "c:\\Users\\q\\Work\\models\\ttk_10k_full",
+  "k_components": 128,
+  "epochs": 2,
+  "n_val": 375,
+  "mean_km": 14.33105277197785,
+  "median_km": 14.46145424539225,
+  "within_1km": 0.0,
+  "within_5km": 0.0,
+  "within_25km": 1.0
+}

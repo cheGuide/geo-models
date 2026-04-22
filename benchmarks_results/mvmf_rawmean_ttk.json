@@ -1,0 +1,22 @@
+{
+    "weight_decay":  0.0001,
+    "val_raw_median_m":  4078.2,
+    "train_sat_count":  364,
+    "patience":  10,
+    "best_epoch":  1,
+    "val_images":  1569,
+    "epoch0_baseline_median_m":  4868.9,
+    "peak_vram_gb":  1.4,
+    "model":  "MvMF-RawMean",
+    "protocol":  "Raw Per-Image Mean",
+    "backbone":  "ResNet50 (frozen)",
+    "lr":  0.0003,
+    "train_ground_views":  1091,
+    "epoch0_baseline_mean_m":  5328,
+    "val_raw_mean_m":  4829.6,
+    "embed_dim":  512,
+    "K_components":  8,
+    "date":  "2026-04-20",
+    "val_recall_1km_pct":  5.93,
+    "notes":  "Training DB: transgeo 364 satellites. Val: full splits/val.txt (1569 frames). Satellite retrieval via MvMF log-mixture score."
+}

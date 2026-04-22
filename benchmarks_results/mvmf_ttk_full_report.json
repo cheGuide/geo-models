@@ -1,0 +1,27 @@
+{
+  "eval_timestamp_utc": "2026-04-10T00:13:16.333370+00:00",
+  "method": "MvMF_vMF_ResNet18",
+  "reference": "mikeizbicki/geolocation (TensorFlow) gps_loss aglm_mix; PyTorch port",
+  "dataset_path": "c:\\Users\\q\\Work\\models\\ttk_10k_full",
+  "bbox": {
+    "lat_min": 55.5,
+    "lat_max": 56.0,
+    "lon_min": 37.2,
+    "lon_max": 37.9
+  },
+  "k_components": 256,
+  "epochs_this_run": 0,
+  "eval_only": true,
+  "epochs_total": 10,
+  "decode": "grid",
+  "train_ratio": 0.85,
+  "n_train": 13715,
+  "n_val": 2421,
+  "mean_km": 16.350556245764317,
+  "median_km": 16.357930748802296,
+  "within_1km": 0.0,
+  "within_5km": 0.0008261049153242462,
+  "within_25km": 1.0,
+  "checkpoint": null,
+  "resume": "benchmarks_results/mvmf_resnet18_ttk.pt"
+}

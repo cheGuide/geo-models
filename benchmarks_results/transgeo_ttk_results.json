@@ -1,0 +1,60 @@
+{
+  "dataset_root": "c:\\Users\\q\\Work\\models\\ttk_10k_full",
+  "val_split": "transgeo/splits/val-ttk.csv",
+  "val_pairs": 70,
+  "baseline_cvusa_pretrained": {
+    "recall_at_1_pct": 91.43,
+    "recall_at_5_pct": 92.86,
+    "source": "TransGeo2022/eval_cvusa_ttk/transgeo_eval_results.txt",
+    "notes": "eval with CUDA (sat_res 320)"
+  },
+  "baseline_vigor_crop_weights": {
+    "recall_at_1_pct": 22.86,
+    "recall_at_5_pct": 22.86,
+    "source": "TransGeo2022/eval_vigor_ttk/transgeo_eval_results.txt",
+    "notes": "eval_vigor_weights_on_ttk.py, zero attention for crop model"
+  },
+  "finetune_cpu_short": {
+    "epochs": 3,
+    "batch_size": 4,
+    "optimizer": "adam",
+    "mining": false,
+    "resume": "checkpoints/CVUSA_model/result/checkpoint.pth.tar",
+    "checkpoint_out": "TransGeo2022/result_ttk/checkpoint.pth.tar",
+    "recall_at_1_pct": 15.71,
+    "recall_at_5_pct": 34.29,
+    "recall_at_10_pct": 51.43,
+    "eval_source": "TransGeo2022/eval_ttk_finetuned/transgeo_eval_results.txt",
+    "notes": "CPU fine-tune (RTX 5070 Ti incompatible with current PyTorch CUDA build); short run for pipeline check, not full quality"
+  },
+  "finetune_gpu_ttk_full_then_crop": {
+    "stage1": {
+      "epochs": 100,
+      "batch_size": 16,
+      "lr": 0.0001,
+      "optimizer": "adam",
+      "sat_res": 320,
+      "weights_only_resume_from_cvusa": true,
+      "save_path": "TransGeo2022/result_ttk_full",
+      "notes": "Adam, no DDP, no mining; scan() produced attention maps in result_ttk_full/attention"
+    },
+    "stage2_crop": {
+      "epochs": 50,
+      "batch_size": 16,
+      "lr": 0.00001,
+      "optimizer": "adam",
+      "resume": "TransGeo2022/result_ttk_full/checkpoint.pth.tar",
+      "save_path": "TransGeo2022/result_ttk_crop",
+      "notes": "crop fine-tune; attention maps from dirname(stage1 resume)=result_ttk_full"
+    },
+    "eval": {
+      "recall_at_1_pct": 5.71,
+      "recall_at_5_pct": 14.29,
+      "recall_at_10_pct": 30.0,
+      "eval_source": "TransGeo2022/result_ttk_crop/transgeo_eval_results.txt",
+      "eval_cmd_notes": "train.py -e with --crop --atten-root ./result_ttk_full (maps from stage1 scan)"
+    },
+    "updated": "2026-04-08"
+  },
+  "updated": "2026-04-08"
+}

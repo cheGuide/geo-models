@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'>
+<title>GeoAgent — кейсы для диплома</title>
+<style>body{font-family:Segoe UI,Arial;margin:24px;max-width:900px;}
+h1{border-bottom:1px solid #ccc;} section{margin:32px 0;padding:20px; border:1px solid #e0e0e0; border-radius:8px;}
+img{max-width:100%; height:auto; border:1px solid #ddd;}
+.err{font-size:1.2em; color:#1a5fb4;}
+code{background:#f5f5f5; padding:2px 6px;}</style></head><body>
+<h1>GeoAgent — визуальные примеры</h1><p><small>Модель: QLoRA (base + checkpoint-600) · n=35 сэмплов · seed=42</small></p>
+<section id='best'><h2>best</h2><p class='err'>Ошибка: <b>583 м</b> (0.583 км)</p><p>Минимальная ошибка (лучшее сработавшее приближение к GT в этой выборке).</p><p><code>GT:</code> 55.72798, 37.59654 &nbsp;|&nbsp; <code>Pred:</code> 55.73261, 37.60090</p><p><img src='images/best.jpg' alt='best'></p></section>
+<section id='worst'><h2>worst</h2><p class='err'>Ошибка: <b>10395 м</b> (10.395 км)</p><p>Максимальная ошибка (худший исход: типично при неоднозначном кадре или сильно нехарактерной сцене).</p><p><code>GT:</code> 55.80320, 37.68723 &nbsp;|&nbsp; <code>Pred:</code> 55.72360, 37.60009</p><p><img src='images/worst.jpg' alt='worst'></p></section>
+<section id='median'><h2>median</h2><p class='err'>Ошибка: <b>4394 м</b> (4.394 км)</p><p>Медианный случай: «типичный» уровень ошибки в середине распределения.</p><p><code>GT:</code> 55.73744, 37.66668 &nbsp;|&nbsp; <code>Pred:</code> 55.72360, 37.60094</p><p><img src='images/median.jpg' alt='median'></p></section>
+<section id='mean_typical'><h2>mean typical</h2><p class='err'>Ошибка: <b>4667 м</b> (4.667 км)</p><p>Случай, ближайший к средней ошибке в выборке (mean ≈ 5312 м).</p><p><code>GT:</code> 55.76263, 37.65799 &nbsp;|&nbsp; <code>Pred:</code> 55.73621, 37.60004</p><p><img src='images/mean_typical.jpg' alt='mean_typical'></p></section>
+<section id='district_level'><h2>district level</h2><p class='err'>Ошибка: <b>2880 м</b> (2.880 км)</p><p>Соответствует медиане по валидации работы: порядок нескольких километров (район).</p><p><code>GT:</code> 55.71153, 37.64073 &nbsp;|&nbsp; <code>Pred:</code> 55.72360, 37.60004</p><p><img src='images/district_level.jpg' alt='district_level'></p></section>
+<p><small>Файл открыт локально; для снимка экрана используйте полноэкранный фрагмент или инструмент «Ножницы» Windows.</small></p>
+</body></html>

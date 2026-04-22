@@ -1,0 +1,55 @@
+{
+  "description": "Результаты автотестов revisiting-im2gps (PyTorch) на TTK (Москва). CPU + MODELS_ALLOW_CPU=1 для локальной отладки.",
+  "environment": {
+    "torch": "2.11.0+cpu",
+    "cuda_available": false
+  },
+  "smoke_im2gps_baseline_imagenet": {
+    "script": "revisiting-im2gps/run_ttk.py",
+    "weights": "ImageNet VGG16 (без дообучения)",
+    "params": { "max_ref": 32, "max_query": 5, "k": 10, "train_ratio": 0.8 },
+    "metrics": {
+      "acc_at_1km_percent": 20.0,
+      "acc_at_25km_percent": 100.0,
+      "median_error_km": 3.4
+    },
+    "note": "Смоук; узкий регион — высокий Acc@25km ожидаем."
+  },
+  "finetune_vgg_ttk": {
+    "script": "revisiting-im2gps/finetune_vgg_ttk.py",
+    "method": "Классификация по сетке lat/lon (PlaNet-style); сохраняются только features+avgpool для retrieval.",
+    "dataset_filter": "Строки метаданных с GPS в bbox Москвы (54.2–56.2°N, 36.5–38.2°E), исключая выбросы ~0°.",
+    "last_run": {
+      "grid": 20,
+      "epochs": 3,
+      "batch_size": 8,
+      "lr": 1e-4,
+      "device": "cpu",
+      "train_samples": 4571,
+      "val_samples": 807,
+      "val_accuracy_classification_per_epoch": [0.0062, 0.0124, 0.0223],
+      "best_val_accuracy_classification": 0.0223,
+      "checkpoint": "revisiting-im2gps/vgg16_ttk_finetuned.pt",
+      "note": "Полный сплит после фильтра Москвы; GPU на sm_120 недоступен в текущей сборке PyTorch — обучение на CPU."
+    },
+    "split": "train_test_split(..., stratify=labels) — иначе val мог содержать классы, не встречавшиеся в train.",
+    "command_example": "python finetune_vgg_ttk.py --dataset_path ../ttk_10k_full --epochs 5 --grid 20 --output vgg16_ttk_finetuned.pt"
+  },
+  "smoke_im2gps_with_finetuned_weights": {
+    "params": { "max_ref": 32, "max_query": 5, "k": 10, "finetuned_weights": "revisiting-im2gps/vgg16_ttk_finetuned.pt" },
+    "metrics": {
+      "acc_at_1km_percent": 0.0,
+      "acc_at_25km_percent": 100.0,
+      "median_error_km": 7.2
+    },
+    "note": "Смоук после 3 эпох, сетка 20×20, train/val 4571/807; узкий регион — Acc@25km часто 100%."
+  },
+  "run_all_automated": {
+    "script": "scripts/run_all_automated.ps1",
+    "prepare_ttk_mini": {
+      "processed_panoramas_with_3_headings": 39,
+      "output_dir": ".automated_test_out/moscow_ttk_mini"
+    }
+  },
+  "updated": "2026-04-08"
+}

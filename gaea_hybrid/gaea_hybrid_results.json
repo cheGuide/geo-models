@@ -1,0 +1,48 @@
+{
+  "model": "GAEA_Hybrid",
+  "best_epoch": 1,
+  "test_raw_mean_m": 5785.414501991592,
+  "test_raw_median_m": 5621.40185546875,
+  "baseline_refs_m": {
+    "geoclip": 3100.0,
+    "kopernik": 3545.0
+  },
+  "vram_sweep_gib": [
+    {
+      "batch": 4,
+      "peak_gib": 1.6734819412231445
+    },
+    {
+      "batch": 8,
+      "peak_gib": 1.745985984802246
+    },
+    {
+      "batch": 12,
+      "peak_gib": 1.8109807968139648
+    },
+    {
+      "batch": 16,
+      "peak_gib": 1.8759756088256836
+    },
+    {
+      "batch": 20,
+      "peak_gib": 1.9414739608764648
+    },
+    {
+      "batch": 24,
+      "peak_gib": 2.006178855895996
+    },
+    {
+      "batch": 32,
+      "peak_gib": 2.1359472274780273
+    },
+    {
+      "batch": 40,
+      "peak_gib": 2.265936851501465
+    },
+    {
+      "batch": 48,
+      "peak_gib": 2.3963537216186523
+    }
+  ]
+}

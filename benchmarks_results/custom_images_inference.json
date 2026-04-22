@@ -1,0 +1,933 @@
+{
+  "images": [
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png",
+    "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png",
+    "C:\\Users\\q\\Work\\models\\benchmarks_results\\image\\MOSCOW_TTK_METHODS_TABLE\\1775160445247.png"
+  ],
+  "dataset_ttk": "c:\\Users\\q\\Work\\models\\ttk_10k_full",
+  "geoclip": {
+    "baseline": {
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png",
+        "top3": [
+          {
+            "lat": 40.75958251953125,
+            "lon": -73.9963607788086,
+            "prob": 0.0032375636510550976
+          },
+          {
+            "lat": 40.75791931152344,
+            "lon": -73.99703979492188,
+            "prob": 0.0031150137074291706
+          },
+          {
+            "lat": 40.75725173950195,
+            "lon": -74.00074005126953,
+            "prob": 0.003077037865296006
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png",
+        "top3": [
+          {
+            "lat": 38.82904052734375,
+            "lon": -94.49752044677734,
+            "prob": 0.008149606175720692
+          },
+          {
+            "lat": 43.881797790527344,
+            "lon": -81.30571746826172,
+            "prob": 0.007861443795263767
+          },
+          {
+            "lat": 38.600372314453125,
+            "lon": -90.01373291015625,
+            "prob": 0.00574130192399025
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png",
+        "top3": [
+          {
+            "lat": 55.54225540161133,
+            "lon": 37.532352447509766,
+            "prob": 0.010481040924787521
+          },
+          {
+            "lat": 55.68373489379883,
+            "lon": 37.72933578491211,
+            "prob": 0.009622687473893166
+          },
+          {
+            "lat": 55.68341064453125,
+            "lon": 37.729270935058594,
+            "prob": 0.009591453708708286
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png",
+        "top3": [
+          {
+            "lat": 55.75088119506836,
+            "lon": 37.82433319091797,
+            "prob": 0.012948098592460155
+          },
+          {
+            "lat": 55.75110626220703,
+            "lon": 37.82463455200195,
+            "prob": 0.012936867773532867
+          },
+          {
+            "lat": 55.75098419189453,
+            "lon": 37.8246955871582,
+            "prob": 0.012907315045595169
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png",
+        "top3": [
+          {
+            "lat": 28.345413208007812,
+            "lon": -80.60733795166016,
+            "prob": 0.006950576789677143
+          },
+          {
+            "lat": 28.345413208007812,
+            "lon": -80.60733795166016,
+            "prob": 0.006950576789677143
+          },
+          {
+            "lat": 28.345413208007812,
+            "lon": -80.60733795166016,
+            "prob": 0.006950576789677143
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png",
+        "top3": [
+          {
+            "lat": 60.71603012084961,
+            "lon": 28.727703094482422,
+            "prob": 0.03691552206873894
+          },
+          {
+            "lat": 60.01472091674805,
+            "lon": 30.379165649414062,
+            "prob": 0.011897756718099117
+          },
+          {
+            "lat": 58.38100051879883,
+            "lon": 26.726499557495117,
+            "prob": 0.011396200396120548
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png",
+        "top3": [
+          {
+            "lat": 53.34025573730469,
+            "lon": 14.507940292358398,
+            "prob": 0.00998175609856844
+          },
+          {
+            "lat": 53.616817474365234,
+            "lon": 13.997811317443848,
+            "prob": 0.008442919701337814
+          },
+          {
+            "lat": 53.05241012573242,
+            "lon": 13.371733665466309,
+            "prob": 0.007238836493343115
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png",
+        "top3": [
+          {
+            "lat": 56.12177658081055,
+            "lon": 36.617774963378906,
+            "prob": 0.08598632365465164
+          },
+          {
+            "lat": 56.12336730957031,
+            "lon": 36.621337890625,
+            "prob": 0.08463805168867111
+          },
+          {
+            "lat": 50.36123275756836,
+            "lon": 30.514183044433594,
+            "prob": 0.018652932718396187
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png",
+        "top3": [
+          {
+            "lat": 38.82904052734375,
+            "lon": -94.49752044677734,
+            "prob": 0.0020703310146927834
+          },
+          {
+            "lat": 37.416324615478516,
+            "lon": -122.02484130859375,
+            "prob": 0.0017191980732604861
+          },
+          {
+            "lat": 37.416324615478516,
+            "lon": -122.02484130859375,
+            "prob": 0.0017191980732604861
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png",
+        "top3": [
+          {
+            "lat": 60.01472091674805,
+            "lon": 30.379165649414062,
+            "prob": 0.012535810470581055
+          },
+          {
+            "lat": 55.80337905883789,
+            "lon": 37.47389221191406,
+            "prob": 0.011720127426087856
+          },
+          {
+            "lat": 60.002288818359375,
+            "lon": 30.366682052612305,
+            "prob": 0.00974336639046669
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png",
+        "top3": [
+          {
+            "lat": 59.46147918701172,
+            "lon": 108.83177947998047,
+            "prob": 0.009489667601883411
+          },
+          {
+            "lat": 60.002288818359375,
+            "lon": 30.366682052612305,
+            "prob": 0.006720761302858591
+          },
+          {
+            "lat": 60.01472091674805,
+            "lon": 30.379165649414062,
+            "prob": 0.006214241962879896
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png",
+        "top3": [
+          {
+            "lat": 55.67556381225586,
+            "lon": 37.2772102355957,
+            "prob": 0.03591584414243698
+          },
+          {
+            "lat": 55.91227340698242,
+            "lon": 37.3974609375,
+            "prob": 0.023645246401429176
+          },
+          {
+            "lat": 55.665191650390625,
+            "lon": 37.28828430175781,
+            "prob": 0.02126859873533249
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png",
+        "top3": [
+          {
+            "lat": 55.68635559082031,
+            "lon": 37.395721435546875,
+            "prob": 0.03892207518219948
+          },
+          {
+            "lat": 55.65871810913086,
+            "lon": 37.492431640625,
+            "prob": 0.014437680132687092
+          },
+          {
+            "lat": 55.57682800292969,
+            "lon": 37.530731201171875,
+            "prob": 0.01408014353364706
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png",
+        "top3": [
+          {
+            "lat": 55.67556381225586,
+            "lon": 37.2772102355957,
+            "prob": 0.046525463461875916
+          },
+          {
+            "lat": 55.665191650390625,
+            "lon": 37.28828430175781,
+            "prob": 0.040457118302583694
+          },
+          {
+            "lat": 55.665191650390625,
+            "lon": 37.28828430175781,
+            "prob": 0.040457118302583694
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png",
+        "top3": [
+          {
+            "lat": 55.74619674682617,
+            "lon": 37.545433044433594,
+            "prob": 0.041483983397483826
+          },
+          {
+            "lat": 55.74723434448242,
+            "lon": 37.537322998046875,
+            "prob": 0.034717801958322525
+          },
+          {
+            "lat": 55.70894241333008,
+            "lon": 37.73015213012695,
+            "prob": 0.021457131952047348
+          }
+        ]
+      },
+      "c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png",
+        "top3": [
+          {
+            "lat": 49.20758819580078,
+            "lon": 16.456016540527344,
+            "prob": 0.05776331573724747
+          },
+          {
+            "lat": 55.60400390625,
+            "lon": 37.28407669067383,
+            "prob": 0.027976984158158302
+          },
+          {
+            "lat": 55.78615951538086,
+            "lon": 37.28546142578125,
+            "prob": 0.020539870485663414
+          }
+        ]
+      },
+      "1775160445247.png": {
+        "path": "C:\\Users\\q\\Work\\models\\benchmarks_results\\image\\MOSCOW_TTK_METHODS_TABLE\\1775160445247.png",
+        "top3": [
+          {
+            "lat": 55.60400390625,
+            "lon": 37.28407669067383,
+            "prob": 0.06120922043919563
+          },
+          {
+            "lat": 55.78615951538086,
+            "lon": 37.28546142578125,
+            "prob": 0.03283650428056717
+          },
+          {
+            "lat": 55.665191650390625,
+            "lon": 37.28828430175781,
+            "prob": 0.029364190995693207
+          }
+        ]
+      }
+    },
+    "fine_tuned": {
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png",
+        "top3": [
+          {
+            "lat": 55.74723434448242,
+            "lon": 37.537322998046875,
+            "prob": 0.01004524901509285
+          },
+          {
+            "lat": 55.744998931884766,
+            "lon": 37.509666442871094,
+            "prob": 0.004554955754429102
+          },
+          {
+            "lat": 55.80678176879883,
+            "lon": 37.537322998046875,
+            "prob": 0.003986402880400419
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png",
+        "top3": [
+          {
+            "lat": 55.59653854370117,
+            "lon": 37.8937873840332,
+            "prob": 0.0037302253767848015
+          },
+          {
+            "lat": 55.6617431640625,
+            "lon": 37.847469329833984,
+            "prob": 0.0030165219213813543
+          },
+          {
+            "lat": 55.63563919067383,
+            "lon": 37.84523010253906,
+            "prob": 0.0030110550578683615
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png",
+        "top3": [
+          {
+            "lat": 55.58550262451172,
+            "lon": 37.600860595703125,
+            "prob": 0.006525397300720215
+          },
+          {
+            "lat": 55.6063232421875,
+            "lon": 37.60642623901367,
+            "prob": 0.00644212681800127
+          },
+          {
+            "lat": 55.582698822021484,
+            "lon": 37.59787368774414,
+            "prob": 0.0064245364628732204
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png",
+        "top3": [
+          {
+            "lat": 55.78937530517578,
+            "lon": 37.680389404296875,
+            "prob": 0.003124631941318512
+          },
+          {
+            "lat": 55.7919921875,
+            "lon": 37.694950103759766,
+            "prob": 0.002896218793466687
+          },
+          {
+            "lat": 55.829559326171875,
+            "lon": 37.63230514526367,
+            "prob": 0.002463362645357847
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png",
+        "top3": [
+          {
+            "lat": 55.7147331237793,
+            "lon": 37.637786865234375,
+            "prob": 0.006255630403757095
+          },
+          {
+            "lat": 55.64691162109375,
+            "lon": 37.617305755615234,
+            "prob": 0.004930202383548021
+          },
+          {
+            "lat": 55.72549819946289,
+            "lon": 37.651668548583984,
+            "prob": 0.004669686779379845
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png",
+        "top3": [
+          {
+            "lat": 55.65871810913086,
+            "lon": 37.492431640625,
+            "prob": 0.009645654819905758
+          },
+          {
+            "lat": 55.64412307739258,
+            "lon": 37.47288513183594,
+            "prob": 0.008856230415403843
+          },
+          {
+            "lat": 55.6437873840332,
+            "lon": 37.47271728515625,
+            "prob": 0.008845780976116657
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png",
+        "top3": [
+          {
+            "lat": 55.80678176879883,
+            "lon": 37.537322998046875,
+            "prob": 0.0007778671570122242
+          },
+          {
+            "lat": 55.78937530517578,
+            "lon": 37.680389404296875,
+            "prob": 0.0006569065735675395
+          },
+          {
+            "lat": 55.82211685180664,
+            "lon": 37.67280578613281,
+            "prob": 0.0006430039647966623
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png",
+        "top3": [
+          {
+            "lat": 55.80678176879883,
+            "lon": 37.537322998046875,
+            "prob": 0.012476780451834202
+          },
+          {
+            "lat": 55.741661071777344,
+            "lon": 37.49848175048828,
+            "prob": 0.002502374118193984
+          },
+          {
+            "lat": 55.744998931884766,
+            "lon": 37.509666442871094,
+            "prob": 0.0016163877444341779
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png",
+        "top3": [
+          {
+            "lat": 55.616947174072266,
+            "lon": 37.680747985839844,
+            "prob": 0.0070239482447505
+          },
+          {
+            "lat": 55.61372375488281,
+            "lon": 37.68353271484375,
+            "prob": 0.00701115233823657
+          },
+          {
+            "lat": 55.58550262451172,
+            "lon": 37.600860595703125,
+            "prob": 0.0063351416029036045
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png",
+        "top3": [
+          {
+            "lat": 55.70591354370117,
+            "lon": 37.5203742980957,
+            "prob": 0.003273089649155736
+          },
+          {
+            "lat": 55.71068572998047,
+            "lon": 37.57693099975586,
+            "prob": 0.0028947016689926386
+          },
+          {
+            "lat": 55.693321228027344,
+            "lon": 37.535884857177734,
+            "prob": 0.0028568932320922613
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png",
+        "top3": [
+          {
+            "lat": 55.70591354370117,
+            "lon": 37.5203742980957,
+            "prob": 0.003841262310743332
+          },
+          {
+            "lat": 55.73329544067383,
+            "lon": 37.50732421875,
+            "prob": 0.003478150349110365
+          },
+          {
+            "lat": 55.74619674682617,
+            "lon": 37.545433044433594,
+            "prob": 0.003340967232361436
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png",
+        "top3": [
+          {
+            "lat": 55.7255859375,
+            "lon": 37.556312561035156,
+            "prob": 0.004626564681529999
+          },
+          {
+            "lat": 55.72699737548828,
+            "lon": 37.55527114868164,
+            "prob": 0.0038346571382135153
+          },
+          {
+            "lat": 55.71068572998047,
+            "lon": 37.57693099975586,
+            "prob": 0.0032676798291504383
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png",
+        "top3": [
+          {
+            "lat": 55.77809524536133,
+            "lon": 37.54936218261719,
+            "prob": 0.009195233695209026
+          },
+          {
+            "lat": 55.730499267578125,
+            "lon": 37.50389862060547,
+            "prob": 0.006254025734961033
+          },
+          {
+            "lat": 55.73329544067383,
+            "lon": 37.50732421875,
+            "prob": 0.005959806963801384
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png",
+        "top3": [
+          {
+            "lat": 55.71068572998047,
+            "lon": 37.57693099975586,
+            "prob": 0.002081137616187334
+          },
+          {
+            "lat": 55.744998931884766,
+            "lon": 37.509666442871094,
+            "prob": 0.0017504391726106405
+          },
+          {
+            "lat": 55.73329544067383,
+            "lon": 37.50732421875,
+            "prob": 0.0014178232522681355
+          }
+        ]
+      },
+      "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png",
+        "top3": [
+          {
+            "lat": 55.74723434448242,
+            "lon": 37.537322998046875,
+            "prob": 0.07637832313776016
+          },
+          {
+            "lat": 55.74619674682617,
+            "lon": 37.545433044433594,
+            "prob": 0.018956955522298813
+          },
+          {
+            "lat": 55.744998931884766,
+            "lon": 37.509666442871094,
+            "prob": 0.013146963901817799
+          }
+        ]
+      },
+      "c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png": {
+        "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png",
+        "top3": [
+          {
+            "lat": 55.70591354370117,
+            "lon": 37.5203742980957,
+            "prob": 0.013466776348650455
+          },
+          {
+            "lat": 55.770416259765625,
+            "lon": 37.55787658691406,
+            "prob": 0.012280480936169624
+          },
+          {
+            "lat": 55.713294982910156,
+            "lon": 37.55878829956055,
+            "prob": 0.010809090919792652
+          }
+        ]
+      },
+      "1775160445247.png": {
+        "path": "C:\\Users\\q\\Work\\models\\benchmarks_results\\image\\MOSCOW_TTK_METHODS_TABLE\\1775160445247.png",
+        "top3": [
+          {
+            "lat": 55.70591354370117,
+            "lon": 37.5203742980957,
+            "prob": 0.03651512414216995
+          },
+          {
+            "lat": 55.6917724609375,
+            "lon": 37.49803161621094,
+            "prob": 0.026362959295511246
+          },
+          {
+            "lat": 55.693321228027344,
+            "lon": 37.535884857177734,
+            "prob": 0.018804730847477913
+          }
+        ]
+      }
+    }
+  },
+  "kopernik_finetuned": {
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png",
+      "lat": 55.71440841257572,
+      "lon": 37.56609350945801
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png",
+      "lat": 55.72524090856314,
+      "lon": 37.61637142375112
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png",
+      "lat": 55.756354509387165,
+      "lon": 37.56910179238766
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png",
+      "lat": 55.74935119791189,
+      "lon": 37.64004433602095
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png",
+      "lat": 55.751566175487824,
+      "lon": 37.591027051955464
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png",
+      "lat": 55.762057532556355,
+      "lon": 37.58781169392169
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png",
+      "lat": 55.761656262911856,
+      "lon": 37.700275760889056
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png",
+      "lat": 55.73630089685321,
+      "lon": 37.60358211547136
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png",
+      "lat": 55.75967214908451,
+      "lon": 37.60230704247952
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png",
+      "lat": 55.78066636994481,
+      "lon": 37.69188520461321
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png",
+      "lat": 55.74477340094745,
+      "lon": 37.589405451714995
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png",
+      "lat": 55.77630368433893,
+      "lon": 37.581758758425714
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png",
+      "lat": 55.74147276300937,
+      "lon": 37.58388621136546
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png",
+      "lat": 55.76262347679585,
+      "lon": 37.5676460955292
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png",
+      "lat": 55.735431800596416,
+      "lon": 37.56090194461867
+    },
+    "c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png",
+      "lat": 55.75956598203629,
+      "lon": 37.588189367577435
+    },
+    "1775160445247.png": {
+      "path": "C:\\Users\\q\\Work\\models\\benchmarks_results\\image\\MOSCOW_TTK_METHODS_TABLE\\1775160445247.png",
+      "lat": 55.75933664385229,
+      "lon": 37.59733806401491
+    }
+  },
+  "revisit_vpr_finetuned": {
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_300435_main-33e72ac4-a1af-4eb0-b0c4-294306902d4c.png",
+      "retrieved_db_index": 710,
+      "similarity": 0.315080463886261,
+      "pred_lat": 55.79280976725097,
+      "pred_lon": 37.64236597456746,
+      "matched_filename": "ttk_06168_55.792810_37.642366_h240.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_Screenshot_2026-03-23_004453-e0b6ed2b-8b34-461c-83a4-f465b04e7e2f.png",
+      "retrieved_db_index": 61,
+      "similarity": 0.49779218435287476,
+      "pred_lat": 55.71044247438756,
+      "pred_lon": 37.6865510365858,
+      "matched_filename": "ttk_01018_55.710442_37.686551_h0.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-2b3f89a0-ba14-4e28-a4a2-b4e22c6bf0fe.png",
+      "retrieved_db_index": 672,
+      "similarity": 0.2106303572654724,
+      "pred_lat": 55.80609089317478,
+      "pred_lon": 37.69129539852551,
+      "matched_filename": "ttk_07036_55.806091_37.691295_h0.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-392e6881-c270-4c19-b721-d3ce2216ec01.png",
+      "retrieved_db_index": 984,
+      "similarity": 0.2628801763057709,
+      "pred_lat": 55.74144678906227,
+      "pred_lon": 37.68038529761125,
+      "matched_filename": "ttk_02989_55.741447_37.680385_h0.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-69347213-3819-4b4c-b16d-cdb15debb53b.png",
+      "retrieved_db_index": 61,
+      "similarity": 0.4998331665992737,
+      "pred_lat": 55.71044247438756,
+      "pred_lon": 37.6865510365858,
+      "matched_filename": "ttk_01018_55.710442_37.686551_h0.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-833731d4-431a-4c28-be57-241411b62396.png",
+      "retrieved_db_index": 1406,
+      "similarity": 0.26151254773139954,
+      "pred_lat": 55.72796713279051,
+      "pred_lon": 37.52150162874926,
+      "matched_filename": "ttk_02071_55.727967_37.521502_h240.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-945ca27e-0a81-49c0-962e-3e918d9f908c.png",
+      "retrieved_db_index": 398,
+      "similarity": 0.26996976137161255,
+      "pred_lat": 55.72041937167283,
+      "pred_lon": 37.59110871864438,
+      "matched_filename": "ttk_01634_55.720419_37.591109_h240.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b44076f9-a6af-4a3a-a917-367415fa6ecc.png",
+      "retrieved_db_index": 1024,
+      "similarity": 0.22726662456989288,
+      "pred_lat": 55.77903026178088,
+      "pred_lon": 37.5193303250761,
+      "matched_filename": "ttk_05266_55.779030_37.519330_h120.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-b70ffea5-68f8-43e4-8023-df5c45e1edbb.png",
+      "retrieved_db_index": 61,
+      "similarity": 0.20262300968170166,
+      "pred_lat": 55.71044247438756,
+      "pred_lon": 37.6865510365858,
+      "matched_filename": "ttk_01018_55.710442_37.686551_h0.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d1c3fb7e-3ce5-4d3a-a118-24da6e317a91.png",
+      "retrieved_db_index": 119,
+      "similarity": 0.27647337317466736,
+      "pred_lat": 55.72951816919588,
+      "pred_lon": 37.71947170455738,
+      "matched_filename": "ttk_02255_55.729518_37.719472_h120.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-d2c44100-1700-4c64-bdbc-4bd59102e733.png",
+      "retrieved_db_index": 61,
+      "similarity": 0.38545548915863037,
+      "pred_lat": 55.71044247438756,
+      "pred_lon": 37.6865510365858,
+      "matched_filename": "ttk_01018_55.710442_37.686551_h0.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-e2d9c1e9-bd45-4243-b2f2-7d266feaefdf.png",
+      "retrieved_db_index": 32,
+      "similarity": 0.2504025995731354,
+      "pred_lat": 55.77011926829516,
+      "pred_lon": 37.54219601710898,
+      "matched_filename": "ttk_04713_55.770119_37.542196_h120.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fa7729ef-0a5c-48cd-a364-dd1fa037885b.png",
+      "retrieved_db_index": 5,
+      "similarity": 0.28380563855171204,
+      "pred_lat": 55.7969217752363,
+      "pred_lon": 37.69756787594542,
+      "matched_filename": "ttk_06475_55.796922_37.697568_h240.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_image-fedddc94-b771-415a-8ed2-9441440dd86f.png",
+      "retrieved_db_index": 1039,
+      "similarity": 0.25903841853141785,
+      "pred_lat": 55.72644725879281,
+      "pred_lon": 37.53496291204026,
+      "matched_filename": "ttk_01983_55.726447_37.534963_h120.jpg"
+    },
+    "c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_AppData_Roaming_Cursor_User_workspaceStorage_2fdcba1f862ee0294cc88db377055b14_images_moskva-ttk-v-raione-novoandreevskogo-mosta-0028072606-preview-25aa5a50-21b1-4e88-8280-c72353ca46fb.png",
+      "retrieved_db_index": 709,
+      "similarity": 0.3287152349948883,
+      "pred_lat": 55.79280976725097,
+      "pred_lon": 37.64236597456746,
+      "matched_filename": "ttk_06168_55.792810_37.642366_h120.jpg"
+    },
+    "c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png": {
+      "path": "C:\\Users\\q\\.cursor\\projects\\c-Users-q-Work-models\\assets\\c__Users_q_Work_models_benchmarks_results_image_MOSCOW_TTK_METHODS_TABLE_1775160445247.png",
+      "retrieved_db_index": 709,
+      "similarity": 0.24066540598869324,
+      "pred_lat": 55.79280976725097,
+      "pred_lon": 37.64236597456746,
+      "matched_filename": "ttk_06168_55.792810_37.642366_h120.jpg"
+    },
+    "1775160445247.png": {
+      "path": "C:\\Users\\q\\Work\\models\\benchmarks_results\\image\\MOSCOW_TTK_METHODS_TABLE\\1775160445247.png",
+      "retrieved_db_index": 709,
+      "similarity": 0.2505435347557068,
+      "pred_lat": 55.79280976725097,
+      "pred_lon": 37.64236597456746,
+      "matched_filename": "ttk_06168_55.792810_37.642366_h120.jpg"
+    }
+  }
+}

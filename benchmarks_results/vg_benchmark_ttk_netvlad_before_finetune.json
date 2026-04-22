@@ -1,0 +1,23 @@
+{
+  "stage": "before_finetune",
+  "description": "ResNet18-conv4 + NetVLAD, веса Pitts30k (off-the-shelf), без дообучения на TTK",
+  "repo": "https://github.com/gmberton/deep-visual-geo-localization-benchmark",
+  "checkpoint": "deep-visual-geo-localization-benchmark/data/checkpoints/resnet18_netvlad_pitts30k.pth",
+  "protocol": "БД: h0; queries: h240; UTM в имени (EPSG:32637); порог позитива 25 м",
+  "split": {
+    "test_panos": 500,
+    "database_images": 500,
+    "query_images": 500
+  },
+  "recalls_percent": {
+    "R@1": 17.4,
+    "R@5": 32.8,
+    "R@10": 41.0,
+    "R@20": 54.0
+  },
+  "note": "Эти цифры — ранний прогон на test-only (500 pano) до разбиения train/val/test. После prepare с тем же протоколом h0/h240 на новом test: baseline Pitts30k дал R@1 14.0, R@5 27.4 (см. vg_benchmark_ttk_netvlad_report.json).",
+  "runtime_sec": 49,
+  "device": "cpu",
+  "eval_command_note": "eval.py --device cpu --dataset_name ttk ...",
+  "datasets_folder": "datasets_vg/datasets"
+}

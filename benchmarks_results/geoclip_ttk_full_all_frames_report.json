@@ -1,0 +1,29 @@
+{
+  "title": "GeoCLIP на Moscow TTK — все кадры (all_frames)",
+  "date": "2026-03-31",
+  "dataset": "ttk_10k_full (dataset_metadata + images), все записи с файлом на диске",
+  "num_images": 16139,
+  "training": {
+    "csv": "c:/Users/q/Work/dipl/ttk_10k_full/ttk_train_full.csv",
+    "epochs": 10,
+    "batch_size": 32,
+    "device": "cuda",
+    "checkpoint": "c:/Users/q/Work/models/geo-clip/checkpoints_ttk/geoclip_ttk_final.pth"
+  },
+  "baseline_pretrained": {
+    "source_json": "benchmarks_results/geoclip_baseline_all_frames.json",
+    "mean_error_km": 2179.02,
+    "median_error_km": 869.17,
+    "within_1km_pct": 0.8,
+    "within_5km_pct": 3.7,
+    "within_25km_pct": 21.0
+  },
+  "finetuned_on_ttk": {
+    "source_json": "benchmarks_results/geoclip_finetuned_all_frames.json",
+    "mean_error_km": 7.86,
+    "median_error_km": 4.05,
+    "within_1km_pct": 14.7,
+    "within_5km_pct": 56.1,
+    "within_25km_pct": 98.0
+  }
+}

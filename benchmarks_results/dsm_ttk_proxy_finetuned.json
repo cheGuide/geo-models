@@ -1,0 +1,12 @@
+{
+  "method": "proxy ResNet18 + cosine (polar sat, street query)",
+  "checkpoint": "C:\\Users\\q\\Work\\models\\cross_view_localization_DSM\\checkpoints_ttk\\proxy_infonce_resnet18.pt",
+  "finetuned": true,
+  "data_root": "C:\\Users\\q\\Work\\models\\cross_view_localization_DSM\\Data\\TTK",
+  "split": "val",
+  "num_pairs": 70,
+  "recall_at_1": 0.07142857142857142,
+  "recall_at_5": 0.15714285714285714,
+  "recall_at_10": 0.24285714285714285,
+  "note": "Прокси PyTorch; не оригинальный DSM (TensorFlow). При checkpoint — дообучение InfoNCE на train-19zl."
+}

@@ -1,0 +1,18 @@
+{
+  "method": "DELF_TFHub_mean_pool_MLP_head",
+  "dataset_path": "C:\\Users\\q\\Work\\models\\ttk_10k_full",
+  "train_panos": 80,
+  "val_panos": 20,
+  "train_images": 239,
+  "val_images": 60,
+  "seed": 42,
+  "val_mean_error_km": 5.147669022534628,
+  "val_median_error_km": 4.8483214899858105,
+  "val_within_1km_pct": 3.3333333333333335,
+  "val_within_5km_pct": 53.333333333333336,
+  "val_within_25km_pct": 100.0,
+  "train_mean_error_km": 0.8824359351802369,
+  "train_median_error_km": 0.16602531039827895,
+  "mlp_max_iter": 500,
+  "model_path": "C:\\Users\\q\\Work\\models\\benchmarks_results\\delf_head_ttk_mlp.joblib"
+}

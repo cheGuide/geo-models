@@ -1,0 +1,69 @@
+{
+  "dataset": "c:\\Users\\q\\Work\\models\\ttk_10k_full",
+  "date": "2026-04-08T00:00:00.000000",
+  "num_samples": 50,
+  "num_samples_mode": "subset",
+  "trained_only": true,
+  "results": [
+    {
+      "model": "GeoCLIP",
+      "variant": "fine-tuned",
+      "status": "ok",
+      "mean_error_km": 10.223672748209463,
+      "median_error_km": 5.133236279840786,
+      "within_1km_pct": 10.0,
+      "within_5km_pct": 50.0,
+      "within_25km_pct": 98.0,
+      "num_samples": 50
+    },
+    {
+      "model": "Revisit-Anything",
+      "variant": "fine-tuned",
+      "status": "ok",
+      "R1_pct": 19.696970283985138,
+      "R5_pct": 21.212121844291687,
+      "R10_pct": 23.48484843969345,
+      "val_db": 1695,
+      "val_queries": 727
+    },
+    {
+      "model": "Kopernik",
+      "variant": "fine-tuned (moscow localization)",
+      "status": "ok",
+      "median_error_m": 3078.0,
+      "mean_error_km": 3.789,
+      "median_error_km": 3.078,
+      "checkpoint": "resnet50_moscow_localization.pth",
+      "num_samples": 50
+    },
+    {
+      "model": "DELF",
+      "variant": "TF Hub mean-pool retrieval (baseline)",
+      "status": "ok",
+      "R1_pct": 6.0,
+      "R5_pct": 27.0,
+      "mean_error_km": 5.48,
+      "median_error_km": 5.07,
+      "positive_radius_m": 1000,
+      "num_samples": 100,
+      "seed": 42,
+      "report_json": "benchmarks_results/delf_moscow_ttk_results.json"
+    },
+    {
+      "model": "DELF",
+      "variant": "MLP head fine-tuned on TTK (frozen DELF)",
+      "status": "ok",
+      "mean_error_km": 5.148,
+      "median_error_km": 4.848,
+      "within_1km_pct": 3.33,
+      "within_5km_pct": 53.33,
+      "within_25km_pct": 100.0,
+      "train_panos": 80,
+      "val_panos": 20,
+      "train_images": 239,
+      "val_images": 60,
+      "note": "Сплит по pano_id; см. delf_head_ttk_report.json",
+      "checkpoint": "benchmarks_results/delf_head_ttk_mlp.joblib"
+    }
+  ]
+}

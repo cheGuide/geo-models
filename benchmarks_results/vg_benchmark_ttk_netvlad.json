@@ -1,0 +1,22 @@
+{
+  "note": "Дублирует baseline до дообучения; см. vg_benchmark_ttk_netvlad_before_finetune.json",
+  "repo": "https://github.com/gmberton/deep-visual-geo-localization-benchmark",
+  "model": "resnet18conv4 + NetVLAD (pretrained Pitts30k)",
+  "checkpoint": "deep-visual-geo-localization-benchmark/data/checkpoints/resnet18_netvlad_pitts30k.pth",
+  "protocol": "БД: h0 по pano; queries: h240; координаты в имени UTM (EPSG:32637); порог позитива 25 м",
+  "split": {
+    "test_panos": 500,
+    "database_images": 500,
+    "query_images": 500
+  },
+  "recalls_percent": {
+    "R@1": 17.4,
+    "R@5": 32.8,
+    "R@10": 41.0,
+    "R@20": 54.0
+  },
+  "runtime_sec": 49,
+  "device": "cpu",
+  "prepare_script": "benchmarks_results/prepare_ttk_for_vg_benchmark.py",
+  "datasets_folder": "datasets_vg/datasets"
+}

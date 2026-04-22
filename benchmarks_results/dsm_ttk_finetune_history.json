@@ -1,0 +1,122 @@
+[
+  {
+    "epoch": 1,
+    "train_infonce_loss": 2.4965877192361012
+  },
+  {
+    "epoch": 2,
+    "train_infonce_loss": 1.022389673760959
+  },
+  {
+    "epoch": 3,
+    "train_infonce_loss": 0.4352392426558903
+  },
+  {
+    "epoch": 4,
+    "train_infonce_loss": 0.2431524055344718
+  },
+  {
+    "epoch": 5,
+    "train_infonce_loss": 0.1318050255732877
+  },
+  {
+    "epoch": 6,
+    "train_infonce_loss": 0.10646912189466613
+  },
+  {
+    "epoch": 7,
+    "train_infonce_loss": 0.0939927367227418
+  },
+  {
+    "epoch": 8,
+    "train_infonce_loss": 0.0856783991413457
+  },
+  {
+    "epoch": 9,
+    "train_infonce_loss": 0.06952493052397456
+  },
+  {
+    "epoch": 10,
+    "train_infonce_loss": 0.05173242251787867
+  },
+  {
+    "epoch": 11,
+    "train_infonce_loss": 0.06296968460083008
+  },
+  {
+    "epoch": 12,
+    "train_infonce_loss": 0.06358401570469141
+  },
+  {
+    "epoch": 13,
+    "train_infonce_loss": 0.04506211222282478
+  },
+  {
+    "epoch": 14,
+    "train_infonce_loss": 0.051523388496467044
+  },
+  {
+    "epoch": 15,
+    "train_infonce_loss": 0.06720342114567757
+  },
+  {
+    "epoch": 16,
+    "train_infonce_loss": 0.0538183440055166
+  },
+  {
+    "epoch": 17,
+    "train_infonce_loss": 0.0369318848741906
+  },
+  {
+    "epoch": 18,
+    "train_infonce_loss": 0.034385702439716885
+  },
+  {
+    "epoch": 19,
+    "train_infonce_loss": 0.06302995633866106
+  },
+  {
+    "epoch": 20,
+    "train_infonce_loss": 0.03532369062304497
+  },
+  {
+    "epoch": 21,
+    "train_infonce_loss": 0.04262379264192922
+  },
+  {
+    "epoch": 22,
+    "train_infonce_loss": 0.0322179589420557
+  },
+  {
+    "epoch": 23,
+    "train_infonce_loss": 0.04705693492931979
+  },
+  {
+    "epoch": 24,
+    "train_infonce_loss": 0.04197583507214274
+  },
+  {
+    "epoch": 25,
+    "train_infonce_loss": 0.028893055793430125
+  },
+  {
+    "epoch": 26,
+    "train_infonce_loss": 0.03972670469166977
+  },
+  {
+    "epoch": 27,
+    "train_infonce_loss": 0.04450127721897194
+  },
+  {
+    "epoch": 28,
+    "train_infonce_loss": 0.04422062635421753
+  },
+  {
+    "epoch": 29,
+    "train_infonce_loss": 0.04269606014713645
+  },
+  {
+    "epoch": 30,
+    "train_infonce_loss": 0.012734642917556422
+  }
+]
