@@ -1,0 +1,18 @@
+{
+  "model": "GeoAgent (Qwen2.5-VL-7B + LoRA rank-64)",
+  "dataset": "Moscow TTK-10k",
+  "best_epoch": 36,
+  "test_mean_m": 2854.2,
+  "test_median_m": 2105.8,
+  "recall_100m": 0.34,
+  "recall_500m": 4.8,
+  "recall_1km": 24.1,
+  "recall_3km": 61.2,
+  "n_test": 1497,
+  "lora_rank": 64,
+  "base_model": "Qwen2.5-VL-7B-Instruct",
+  "baseline_refs_m": {
+    "kopernik": 3545.0,
+    "geoclip": 3100.0
+  }
+}

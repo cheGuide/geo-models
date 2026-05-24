@@ -3,8 +3,8 @@
 GeoAgent SOTA Report — Moscow TTK-10k
 ======================================
 Reads from:
-  GeoAgent/geoagent_sota_metrics.csv   — epoch-by-epoch training log
-  GeoAgent/geoagent_sota_results.json  — final test set results
+  deploy/data/geoagent_sota_metrics.csv  — epoch-by-epoch training log
+  deploy/data/geoagent_sota_results.json — final test set results
 
 Output: standardized_reports/19_geoagent_sota_report.png  (2×3 grid)
 
@@ -34,12 +34,12 @@ from matplotlib.ticker import FuncFormatter
 warnings.filterwarnings("ignore")
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-BASE    = Path(__file__).resolve().parent
+BASE    = Path(__file__).resolve().parent.parent
 OUT_DIR = BASE / "standardized_reports"
 OUT_PNG = OUT_DIR / "19_geoagent_sota_report.png"
 
-METRICS_CSV  = BASE / "deploy" / "data" / "geoagent_sota_metrics.csv"
-RESULTS_JSON = BASE / "deploy" / "data" / "geoagent_sota_results.json"
+METRICS_CSV  = Path(__file__).resolve().parent / "data" / "geoagent_sota_metrics.csv"
+RESULTS_JSON = Path(__file__).resolve().parent / "data" / "geoagent_sota_results.json"
 
 OUT_DIR.mkdir(exist_ok=True)
 

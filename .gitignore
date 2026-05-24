@@ -57,6 +57,9 @@ kopernik/
 
 # Данные и датасеты
 data/
+!deploy/data/
+!deploy/data/geoagent_sota_metrics.csv
+!deploy/data/geoagent_sota_results.json
 datasets/
 datasets_vg/
 ttk_10k_full/
