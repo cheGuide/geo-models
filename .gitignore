@@ -70,3 +70,11 @@ models/
 # HuggingFace / промежуточные данные
 hf_data/
 hf_images/
+
+# Node
+node_modules/
+cache/
+
+# Temp/editor
+_torch_versions_backup.txt
+.vscode/
